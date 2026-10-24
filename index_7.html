@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appuscholar</title>
+<meta name="description" content="A free research-writing app for psychology and medical students in India.">
+<style>
+:root{--bg:#fbf9ff;--ink:#1d1730;--soft:#5b5470;--line:#e4dcf4;--brand:#6b3fd1;--brand-ink:#ffffff;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#15111f;--ink:#efe9fb;--soft:#b7aecb;--line:#2d2540;--brand:#a98bf2;--brand-ink:#15111f;--card:#1c1729}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Nirmala UI",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-weight:700;font-size:20px;letter-spacing:.2px}
+.logo span{color:var(--brand)}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:15px;cursor:pointer}
+.hero{padding:28px 0 8px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.25;margin:0 0 14px}
+.lead{color:var(--soft);margin:0 0 22px}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);text-decoration:none;font-weight:600;padding:11px 20px;border-radius:10px}
+h2{font-size:20px;margin:40px 0 10px}
+ul{padding-left:20px;margin:0}
+li{margin:6px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:10px}
+.people p{margin:4px 0}
+.muted{color:var(--soft);font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:18px 0 36px;color:var(--soft);font-size:14px}
+a{color:var(--brand)}
+[data-l="hi"]{display:none}
+html[lang="hi"] [data-l="en"]{display:none}
+html[lang="hi"] [data-l="hi"]{display:revert}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">Appu<span>scholar</span></div>
+  <button class="lang" id="lang" type="button" aria-label="Switch language">हिंदी</button>
+</header>
+
+<section class="hero">
+  <h1 data-l="en">Research is your work. Appuscholar helps you do it better.</h1>
+  <h1 data-l="hi">शोध आपका काम है। Appuscholar इसे बेहतर ढंग से करने में आपकी मदद करता है।</h1>
+  <p class="lead" data-l="en">A free research-writing app for psychology and medical students in India. It helps you plan a study, find and cite papers, analyse data, write in your own voice, and learn through short lectures in English and Hindi.</p>
+  <p class="lead" data-l="hi">भारत के psychology और medical छात्रों के लिए एक मुफ़्त research-writing app। इसकी मदद से आप अपनी study की योजना बना सकते हैं, research papers खोजकर cite कर सकते हैं, data का analysis कर सकते हैं, अपनी शैली में लिख सकते हैं, और हिंदी व English में छोटे lectures से सीख सकते हैं।</p>
+  <a class="btn" href="#trial" data-l="en">Join the trial</a>
+  <a class="btn" href="#trial" data-l="hi">Trial में शामिल हों</a>
+</section>
+
+<h2 data-l="en">What it does</h2>
+<h2 data-l="hi">यह क्या करता है</h2>
+<div class="card">
+<ul data-l="en">
+  <li>Plan your study: research question, objectives, method and study plan in one place.</li>
+  <li>Find and cite papers: search research papers and keep your references in order.</li>
+  <li>Analyse data: run statistics and get results written in APA style.</li>
+  <li>Write in your own voice: the writing and the thinking stay yours.</li>
+  <li>Learn research skills: short lectures in English and Hindi.</li>
+  <li>Check your work: find common research mistakes before you submit.</li>
+</ul>
+<ul data-l="hi">
+  <li>Study की योजना: research question, objectives, method और study plan एक जगह।</li>
+  <li>Papers खोजें और cite करें: research papers खोजें और references व्यवस्थित रखें।</li>
+  <li>Data का analysis: statistics चलाएँ और APA style में results पाएँ।</li>
+  <li>अपनी शैली में लिखें: लेखन और सोच, दोनों आपके अपने रहते हैं।</li>
+  <li>Research सीखें: हिंदी और English में छोटे lectures।</li>
+  <li>अपना काम जाँचें: submit करने से पहले research की आम ग़लतियाँ पहचानें।</li>
+</ul>
+</div>
+
+<h2 data-l="en">What it does not do</h2>
+<h2 data-l="hi">यह क्या नहीं करता</h2>
+<div class="card">
+<ul data-l="en">
+  <li>It does not write your thesis or research paper for you.</li>
+  <li>It does not help you hide AI use or get past AI detectors.</li>
+  <li>It does not replace your supervisor or your ethics committee.</li>
+</ul>
+<ul data-l="hi">
+  <li>यह आपकी thesis या research paper आपके लिए नहीं लिखता।</li>
+  <li>यह AI के इस्तेमाल को छिपाने या AI detectors से बचने में मदद नहीं करता।</li>
+  <li>यह आपके supervisor या ethics committee की जगह नहीं लेता।</li>
+</ul>
+</div>
+
+<div id="trial"></div>
+<h2 data-l="en">Join the trial</h2>
+<h2 data-l="hi">Trial में शामिल हों</h2>
+<div class="card">
+  <p data-l="en">We are preparing a trial with 20–30 students of psychology or medicine in India. The app needs an access code, which trial students receive from us. To take part, write to <a href="mailto:contact@appuscholar.com">contact@appuscholar.com</a>.</p>
+  <p data-l="en"><a href="https://srssg74-crypto.github.io/appuscholer/">Open the app</a> (trial students, with an access code).</p>
+  <p data-l="hi">हम भारत में psychology या medicine पढ़ रहे 20–30 छात्रों के साथ एक trial की तैयारी कर रहे हैं। App चलाने के लिए access code चाहिए, जो trial के छात्रों को हमसे मिलेगा। शामिल होने के लिए <a href="mailto:contact@appuscholar.com">contact@appuscholar.com</a> पर लिखें।</p>
+  <p data-l="hi"><a href="https://srssg74-crypto.github.io/appuscholer/">App खोलें</a> (trial के छात्र, access code के साथ)।</p>
+</div>
+
+<h2 data-l="en">Who makes it</h2>
+<h2 data-l="hi">इसे कौन बनाता है</h2>
+<div class="card people">
+  <p data-l="en"><strong>Dr. Shiv Raj Sharma</strong>, creator. He built Appuscholar to help students learn research and carry it out with care and independence.</p>
+  <p data-l="hi"><strong>डॉ. शिव राज शर्मा</strong>, निर्माता। उन्होंने Appuscholar इसलिए बनाया ताकि छात्र research सीखें और उसे सावधानी व स्वतंत्रता से कर सकें।</p>
+  <!-- Add Dr. Sharma's qualifications here when supplied. -->
+  <p data-l="en"><strong>Apoorva Raj</strong> and <strong>Shweta Gaur</strong>, advisers.</p>
+  <p data-l="hi"><strong>अपूर्वा राज</strong> और <strong>श्वेता गौड़</strong>, सलाहकार।</p>
+</div>
+
+<div id="privacy"></div>
+<h2 data-l="en">Privacy</h2>
+<h2 data-l="hi">Privacy</h2>
+<div class="card">
+  <p data-l="en">For now, your work stays on your own device. Appuscholar does not keep your research files on any server. When you use an AI feature, the text you select goes to the AI provider you chose, under your own key. Nothing else leaves your device. A full privacy notice will be published before the app stores anything online.</p>
+  <p data-l="hi">अभी आपका काम आपके अपने device पर ही रहता है। Appuscholar आपकी research files किसी server पर नहीं रखता। जब आप कोई AI feature इस्तेमाल करते हैं, तो आपका चुना हुआ text आपकी अपनी key से उस AI provider के पास जाता है जिसे आपने चुना है। इसके अलावा कुछ भी आपके device से बाहर नहीं जाता। App जब कुछ भी online रखना शुरू करेगा, उससे पहले पूरा privacy notice प्रकाशित किया जाएगा।</p>
+</div>
+
+<footer>
+  <span data-l="en">© 2026 Dr. Shiv Raj Sharma · <a href="mailto:contact@appuscholar.com">contact@appuscholar.com</a></span>
+  <span data-l="hi">© 2026 डॉ. शिव राज शर्मा · <a href="mailto:contact@appuscholar.com">contact@appuscholar.com</a></span>
+</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('lang'),h=document.documentElement;
+  function set(l){h.lang=l;b.textContent=l==='hi'?'English':'हिंदी';try{localStorage.setItem('lang',l)}catch(e){}}
+  var s=null;try{s=localStorage.getItem('lang')}catch(e){}
+  if(s==='hi'||s==='en')set(s);
+  b.addEventListener('click',function(){set(h.lang==='hi'?'en':'hi')});
+})();
+</script>
+</body>
+</html>
